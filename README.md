@@ -1,2 +1,1 @@
-# rrGo
-Docker docker ~ Patchouli Go ~
+# [Go](https://golang.org)
