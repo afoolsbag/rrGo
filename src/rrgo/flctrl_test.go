@@ -1,76 +1,73 @@
 package rrgo
 
-import "testing"
+import (
+	"testing"
+	"math/rand"
+)
 
-func TestIfElse(t *testing.T) {
-	// (1)
-	if true {
-		// ...
+// TestIfBranch if 分支。
+func TestIfBranch(t *testing.T) {
+
+	if rand.Intn(2) < 2 {
+		// pass
 	} else {
-		// ...
+		t.Fail()
 	}
 
-	// (2)
-	if lmt := 3; lmt < 7 {
-		// ...
+	if rnd := rand.Intn(2); rnd < 2 {
+		// pass
+	} else {
+		t.Fail()
 	}
 }
 
-func TestSwitchCaseDefault(t *testing.T) {
-	// (1)
-	const val = 0
+// TestSwitchBranch switch 分支。
+func TestSwitchBranch(t *testing.T) {
 
-	switch val {
-	case 0:
-		fallthrough
-	case 1:
-		// ...
-	case 2:
-		// ...
+	switch rand.Intn(2) {
+	case 0, 1:
+		// pass
 	default:
-		// ...
+		t.Fail()
 	}
 
-	// (2)
 	switch {
-	case true:
-		// ...
+	case rand.Intn(2) < 2:
+		// pass
 	default:
-		// ...
+		t.Fail()
 	}
 
-	// (3)
-	switch rslt := 0; {
-	case rslt < 0:
-		// ...
-	case rslt < 10:
-		// ...
+	switch rnd := rand.Intn(2); {
+	case rnd < 1:
+		fallthrough
+	case rnd < 2:
+		// pass
 	default:
-		// ...
+		t.Fail()
 	}
+
 }
 
-func TestFor(t *testing.T) {
-	// (1)
-	for i := 0; i <= 5; i++ {
+// TestForLoop for 循环。
+func TestForLoop(t *testing.T) {
+
+	for {
 		// ...
+		break
 	}
 
-	// (2)
 	cond := true
 	for cond {
 		// ...
 		cond = false
 	}
 
-	// (3)
-	for {
+	for i := 0; i <= 5; i++ {
 		// ...
-		break
 	}
 
-	// (4)
-	str := "We Are the World"
+	const str = "We Are the World"
 	for ix, val := range str {
 		ix++
 		val++

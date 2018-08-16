@@ -21,3 +21,5 @@
 [*Awesome Go*](https://awesome-go.com/)
 
 [*Docker*](https://docker.com)
+[*termui*](https://github.com/gizak/termui)
+[*webview*](https://github.com/zserge/webview)
