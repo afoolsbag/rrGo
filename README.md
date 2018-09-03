@@ -6,9 +6,12 @@
 
 ## References
 
-[*The Go Programming Language Specification*](https://golang.org/ref/spec)
-
-[*Packages*](https://golang.org/pkg/)
+["Documentation"](https://golang.org/doc/). *The Go Programming Language*.
++ [Package Documentation](https://golang.org/pkg/)
++ [Command Documentation](https://golang.org/doc/cmd)
++ [Language Specification](https://golang.org/ref/spec)
++ [The Go Memory Model](https://golang.org/ref/mem)
++ [Release History](https://golang.org/doc/devel/release.html)
 
 ## Guides
 
@@ -23,3 +26,5 @@
 [*Docker*](https://docker.com)
 [*termui*](https://github.com/gizak/termui)
 [*webview*](https://github.com/zserge/webview)
+
+[*GoLand*](https://jetbrains.com/go/)
