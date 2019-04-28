@@ -1,11 +1,10 @@
 # zhengrr
-# 2018-01-17 – 2018-07-24
-# The MIT License
+# 2018-01-17 – 2019-04-28
+# Unlicense
 
-#===========================================================================
+#-------------------------------------------------------------------------------
 # https://github.com/github/gitignore/blob/master/Global/Linux.gitignore
-# ver. 2016-09-20
-#---------------------------------------------------------------------------
+# 2016-09-20
 
 *~
 
@@ -21,10 +20,9 @@
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
-#===========================================================================
+#-------------------------------------------------------------------------------
 # https://github.com/github/gitignore/blob/master/Global/macOS.gitignore
-# ver. 2017-07-07
-#---------------------------------------------------------------------------
+# 2017-07-07
 
 # General
 .DS_Store
@@ -54,10 +52,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-#===========================================================================
+#-------------------------------------------------------------------------------
 # https://github.com/github/gitignore/blob/master/Global/Windows.gitignore
-# ver. 2018-04-08
-#---------------------------------------------------------------------------
+# 2018-04-08
 
 # Windows thumbnail cache files
 Thumbs.db
@@ -83,10 +80,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-#===========================================================================
+#-------------------------------------------------------------------------------
 # https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
-# ver. 2018-07-03
-#---------------------------------------------------------------------------
+# 2018-09-15
 
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
@@ -97,6 +93,9 @@ $RECYCLE.BIN/
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+
+# Generated files
+.idea/**/contentModel.xml
 
 # Sensitive or high-churn files
 .idea/**/dataSources/
@@ -149,10 +148,13 @@ fabric.properties
 # Editor-based Rest Client
 .idea/httpRequests
 
-#===========================================================================
+# Android studio 3.1+ serialized cache file
+.idea/caches/build_file_checksums.ser
+
+#-------------------------------------------------------------------------------
 # https://github.com/github/gitignore/blob/master/Go.gitignore
-# ver. 2018-01-02
-#---------------------------------------------------------------------------
+# 2018-11-29
+
 # Binaries for programs and plugins
 *.exe
 *.exe~
@@ -160,14 +162,12 @@ fabric.properties
 *.so
 *.dylib
 
-# Test binary, build with `go test -c`
+# Test binary, built with `go test -c`
 *.test
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 
-#===========================================================================
-# 自定义
-#---------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
 
 /.idea/
