@@ -1,78 +1,81 @@
 package rrgo
 
-import (
-	"testing"
-	"math/rand"
-)
+import "testing"
 
-// TestIfBranch if 分支。
-func TestIfBranch(t *testing.T) {
+// TestIf
+//
+// if[ initialization;] condition {
+// }[ else {
+// }]
+func TestIf(t *testing.T) {
+	condition := true
+	initialization := func() { condition = !condition }
 
-	if rand.Intn(2) < 2 {
-		// pass
-	} else {
-		t.Fail()
+	if condition {
+		// ...
 	}
 
-	if rnd := rand.Intn(2); rnd < 2 {
-		// pass
-	} else {
-		t.Fail()
+	if initialization(); condition {
+		// ...
 	}
 }
 
-// TestSwitchBranch switch 分支。
-func TestSwitchBranch(t *testing.T) {
+// TestSwitch
+//
+// switch val {
+//     case val1, val2: [fallthrough]
+//     case val3:
+//     default:
+// }
+//
+// switch {
+//     case condition1: [fallthrough]
+//     case condition2:
+//     default:
+// }
+func TestSwitch(t *testing.T) {
+	val := 3
 
-	switch rand.Intn(2) {
-	case 0, 1:
-		// pass
+	switch val {
+	case 1, 2, 3:
+		// ...
+	case 4, 5, 6:
+		fallthrough
 	default:
-		t.Fail()
+		// ...
 	}
 
 	switch {
-	case rand.Intn(2) < 2:
-		// pass
+	case val < 0:
+		// ...
+	case 0 < val:
+		//...
 	default:
-		t.Fail()
+		// ...
 	}
-
-	switch rnd := rand.Intn(2); {
-	case rnd < 1:
-		fallthrough
-	case rnd < 2:
-		// pass
-	default:
-		t.Fail()
-	}
-
 }
 
-// TestForLoop for 循环。
-func TestForLoop(t *testing.T) {
-
+// TestFor
+//
+// for {
+// }
+//
+// for condition {
+// }
+//
+// for initialization; condition; op {
+// }
+func TestFor(t *testing.T) {
 	for {
-		// ...
 		break
 	}
 
-	cond := true
-	for cond {
-		// ...
-		cond = false
+	i := 0
+	for i < 9 {
+		i++
 	}
 
-	for i := 0; i <= 5; i++ {
+	for i := 0; i < 9; i++ {
 		// ...
-	}
-
-	const str = "We Are the World"
-	for ix, val := range str {
-		ix++
-		val++
-	}
-	for val := range str {
-		val++
 	}
 }
