@@ -17,7 +17,6 @@
 
 / [*Go 语言之旅*](https://tour.go-zh.org/list)
 / [*Go 入门指南*](https://github.com/Unknwon/the-way-to-go_ZH_CN)
-/ ["Go 语言教程"](https://www.runoob.com/go/). *菜鸟教程*.
 
 ## Awesome
 
