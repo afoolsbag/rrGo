@@ -23,7 +23,8 @@
 [*Awesome Go*](https://github.com/avelino/awesome-go)
 
 / [*Docker*](https://docker.com)
-/ [*GoLand*](https://jetbrains.com/go/)
+/ [*GoLand*](https://jetbrains.com/go/) <sub>
+    [*zh_CN*](https://github.com/pingfangx/jetbrains-in-chinese/tree/master/GoLand) </sub>
 / [*termui*](https://github.com/gizak/termui)
 / [*webview*](https://github.com/zserge/webview)
 
