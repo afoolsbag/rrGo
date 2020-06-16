@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+
+  rtmp-html5-service:
+    image: rtmp-html5-service
+    ports:
+      - "80:80/tcp"
+      - "1935:1935/tcp"
+    volumes:
+      - "./run/vod:/var/vod"
