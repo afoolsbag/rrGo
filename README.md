@@ -1,8 +1,8 @@
 # zhengrr 所知的 Go
 
-[*Go*](https://golang.org "2009")
+官网 <https://golang.org>，始于 2009 年。
 
-["为什么要使用 Go 语言？Go 语言的优势在哪里？"](https://zhihu.com/question/21409296). *知乎*.
+知乎上的[*为什么要使用 Go 语言？Go 语言的优势在哪里？*](https://zhihu.com/question/21409296)
 
 ## 参考
 
@@ -15,18 +15,18 @@
 
 ## 指南
 
-/ [*Go 语言之旅*](https://tour.go-zh.org/list)
-/ [*Go 入门指南*](https://github.com/Unknwon/the-way-to-go_ZH_CN)
+| [*Go 语言之旅*](https://tour.go-zh.org/list)
+| [*Go 入门指南*](https://github.com/Unknwon/the-way-to-go_ZH_CN)
 
 ## Awesome
 
 [*Awesome Go*](https://github.com/avelino/awesome-go)
 
-/ [*Docker*](https://docker.com)
-/ [*GoLand*](https://jetbrains.com/go/) <sub>
-    [*zh_CN*](https://github.com/pingfangx/jetbrains-in-chinese/tree/master/GoLand) </sub>
-/ [*termui*](https://github.com/gizak/termui)
-/ [*webview*](https://github.com/zserge/webview)
+| [*Docker*](https://docker.com)
+| [*GoLand*](https://jetbrains.com/go/) <sub>
+      [*zh_CN*](https://github.com/pingfangx/jetbrains-in-chinese/tree/master/GoLand) </sub>
+| [*termui*](https://github.com/gizak/termui)
+| [*webview*](https://github.com/zserge/webview)
 
 ## 许可
 
